@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { MyH2 } from "../components/my-components";
 
 const Container = styled.div`
   width: 100%;
@@ -15,7 +16,7 @@ const Devise = styled.div`
   display: flex;
   width: 100%;
   flex-direction: row;
-  font-size: 75px;
+  font-size: 100px;
   justify-content: flex-around;
   align-items: center;
 `;
@@ -29,8 +30,10 @@ function Home() {
       <Devise>
         <img alt="logo_with_name" src="./logo_aftermath.png" />
         <DeviseText>
-          Together <br />
-          we rise
+          <MyH2>
+            Together <br />
+            we rise
+          </MyH2>
         </DeviseText>
       </Devise>
     </Container>
